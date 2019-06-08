@@ -6,12 +6,15 @@ import {
     Provider
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from '@dr-shared/components';
 
 const sharedModules: any[] = [
     CommonModule
 ];
 
-const sharedComponents: any[] = [];
+const sharedComponents: any[] = [
+    HeaderComponent
+];
 
 const sharedDirectives: Directive[] = [];
 
