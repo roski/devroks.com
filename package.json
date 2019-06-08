@@ -1,6 +1,10 @@
 {
   "name": "devroks",
   "version": "0.0.0",
+  "description": "Devroks simple blog platform",
+  "author": "Roman Skydan",
+  "homepage": "devroks.com",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
