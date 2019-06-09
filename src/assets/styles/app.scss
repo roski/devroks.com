@@ -1,1 +1,9 @@
 @import '~milligram/dist/milligram.min.css';
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "~@fortawesome/fontawesome-free/css/brands.min.css";
+
+.wrapper {
+  .container {
+    max-width: 80rem;
+  }
+}
