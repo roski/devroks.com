@@ -1,0 +1,42 @@
+@import '../../../../assets/styles/varibles';
+@import '../../../../assets/styles/mixins';
+
+header {
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: $light-blue;
+        margin-bottom: 2rem;
+        @include gradient;
+    }
+
+    .dr-header {
+        .dr-logo {
+            height: 100%;
+            width: 100px;
+        }
+
+        .dr-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 0;
+
+            li {
+                padding: 1rem;
+                margin: 0;
+
+                i {
+                    color: $black;
+
+                    &:hover {
+                        @include gradientFont;
+                    }
+                }
+            }
+        }
+    }
+}

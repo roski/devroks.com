@@ -8,6 +8,7 @@ const routes: Routes = [
     {
         path: '',
         redirectTo: 'blog',
+        pathMatch: 'full'
     },
     {
         path: 'blog',

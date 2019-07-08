@@ -1,0 +1,26 @@
+@import './varibles';
+
+@mixin gradient() {
+    background: $blue;
+    background: -moz-linear-gradient(left, $blue 0%, $light-blue 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $blue), color-stop(100%, $light-blue));
+    background: -webkit-linear-gradient(left, $blue 0%, $light-blue 100%);
+    background: -o-linear-gradient(left, $blue 0%, $light-blue 100%);
+    background: -ms-linear-gradient(left, $blue 0%, $light-blue 100%);
+    background: linear-gradient(to right, $blue 0%, $light-blue 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$blue, endColorstr=$light-blue, GradientType=1 );
+}
+
+@mixin gradientFont() {
+    background: linear-gradient(to right, $blue 0%, $light-blue 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $blue;
+}
+
+@mixin animationAll() {
+    -moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+}
