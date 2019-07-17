@@ -1,0 +1,26 @@
+@import '../../../assets/styles/varibles';
+@import '../../../assets/styles/mixins';
+
+.dr-blog-stream-item-preview {
+  .dr-blog-post-create {
+    text-transform: uppercase;
+  }
+
+  .dr-blog-post-title {
+    h2 {
+      a {
+        font-weight: bold;
+        color: $black;
+        cursor: pointer;
+
+        &:hover {
+          @include gradientFont;
+        }
+      }
+    }
+  }
+
+  .dr-blog-post-description {
+
+  }
+}

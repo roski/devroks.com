@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { BLOG_POSTS } from '@dr-shared/mock';
 import {
-    from,
-    Observable
+    Observable,
+    of
 } from 'rxjs';
 import { Post } from '@dr-shared/models';
 
@@ -10,9 +10,15 @@ import { Post } from '@dr-shared/models';
     providedIn: 'root',
 })
 export class BlogService {
-    constructor() { }
+    constructor() {
+    }
 
-    getBlogPosts(): Observable<Post[]> {
-        return from([BLOG_POSTS]);
+    getPosts(): Observable<Post[]> {
+        return of(BLOG_POSTS);
+    }
+
+    getPost(id: number): Observable<Post> {
+        const post: Post = BLOG_POSTS.filter(p => p.id === id)[0];
+        return of(post);
     }
 }

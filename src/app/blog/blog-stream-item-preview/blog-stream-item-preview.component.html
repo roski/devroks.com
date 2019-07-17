@@ -1,0 +1,15 @@
+<article class="dr-blog-stream-item-preview">
+  <div class="row">
+    <div class="column">
+      <div class="dr-blog-post-create">{{post.createdAt | date : 'mediumDate'}}</div>
+      <div class="dr-blog-post-title">
+        <h2>
+          <a [routerLink]="'post/'+ post.id">
+            {{post.title}}
+          </a>
+        </h2>
+      </div>
+      <div class="dr-blog-post-description">{{post.description}}</div>
+    </div>
+  </div>
+</article>

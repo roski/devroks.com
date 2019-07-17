@@ -1,9 +1,5 @@
 <section class="container dr-blog">
     <div class="row">
-      <div class="column">
-          <dr-blog-post-preview class="dr-post-preview"
-                                *ngFor="let post of posts"
-                                [post]="post"></dr-blog-post-preview>
-      </div>
+        <router-outlet></router-outlet>
     </div>
 </section>

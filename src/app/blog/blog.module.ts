@@ -3,13 +3,22 @@ import { CommonModule } from '@angular/common';
 import { BlogComponent } from './blog.component';
 import { RouterModule } from '@angular/router';
 import { blogRouted } from './blog.routes';
-import { BlogPostPreviewComponent } from './blog-post-preview/blog-post-preview.component';
+import { BlogStreamComponent } from './blog-stream';
+import { BlogStreamItemPreviewComponent } from './blog-stream-item-preview';
+import { BlogStreamItemComponent } from './blog-stream-item';
+
 
 @NgModule({
-  declarations: [BlogComponent, BlogPostPreviewComponent],
-  imports: [
-    RouterModule.forChild(blogRouted),
-    CommonModule
-  ]
+    declarations: [
+        BlogComponent,
+        BlogStreamComponent,
+        BlogStreamItemComponent,
+        BlogStreamItemPreviewComponent,
+    ],
+    imports: [
+        RouterModule.forChild(blogRouted),
+        CommonModule
+    ]
 })
-export class BlogModule { }
+export class BlogModule {
+}
