@@ -10,7 +10,7 @@ import { SOCIAL_LINKS } from '@dr-shared/models';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+    blogLink: string = '/blog';
     socialLinks = SOCIAL_LINKS;
     constructor() {
     }

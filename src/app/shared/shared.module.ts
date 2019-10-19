@@ -7,8 +7,10 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '@dr-shared/components';
+import { RouterModule } from '@angular/router';
 
 const sharedModules: any[] = [
+    RouterModule,
     CommonModule
 ];
 
