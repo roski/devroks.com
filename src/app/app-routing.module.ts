@@ -12,11 +12,11 @@ const routes: Routes = [
     },
     {
         path: 'blog',
-        loadChildren: './blog#BlogModule'
+        loadChildren: () => import('./blog').then(m => m.BlogModule)
     },
     {
         path: 'admin-panel',
-        loadChildren: './admin-panel#AdminPanelModule'
+        loadChildren: () => import('./admin-panel').then(m => m.AdminPanelModule)
     },
     {
         path: '**',
