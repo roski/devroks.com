@@ -20,7 +20,7 @@ const routes: Routes = [
     },
     {
         path: '**',
-        redirectTo: '/blog',
+        redirectTo: 'blog',
         pathMatch: 'full'
     }
 ];

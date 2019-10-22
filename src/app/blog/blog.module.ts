@@ -6,6 +6,7 @@ import { blogRouted } from './blog.routes';
 import { BlogStreamComponent } from './blog-stream';
 import { BlogStreamItemPreviewComponent } from './blog-stream-item-preview';
 import { BlogStreamItemComponent } from './blog-stream-item';
+import { SharedModule } from '@dr-shared/shared.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { BlogStreamItemComponent } from './blog-stream-item';
         BlogStreamItemPreviewComponent,
     ],
     imports: [
+        SharedModule,
         RouterModule.forChild(blogRouted),
         CommonModule
     ]

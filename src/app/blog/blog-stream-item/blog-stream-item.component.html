@@ -5,7 +5,9 @@
                 <div class="dr-blog-post-title">
                     <h2>{{post.title}}</h2>
                 </div>
-                <div class="dr-blog-post-description">{{post.description}}</div>
+                <ckeditor (change)="onChange($event)"
+                          [editor]="editor"
+                          [data]="post.content"></ckeditor>
             </div>
         </div>
 </article>

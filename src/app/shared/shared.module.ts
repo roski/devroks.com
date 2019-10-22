@@ -8,10 +8,12 @@ import {
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '@dr-shared/components';
 import { RouterModule } from '@angular/router';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 const sharedModules: any[] = [
     RouterModule,
-    CommonModule
+    CommonModule,
+    CKEditorModule
 ];
 
 const sharedComponents: any[] = [

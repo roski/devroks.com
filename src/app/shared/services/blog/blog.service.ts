@@ -7,7 +7,7 @@ import {
 import { Post } from '@dr-shared/models';
 
 @Injectable({
-    providedIn: 'root',
+    providedIn: 'root'
 })
 export class BlogService {
     constructor() {
@@ -20,5 +20,10 @@ export class BlogService {
     getPost(id: number): Observable<Post> {
         const post: Post = BLOG_POSTS.filter(p => p.id === id)[0];
         return of(post);
+    }
+
+    updatePost(id: number, data: any): Observable<Post>  {
+        const post: Post = BLOG_POSTS.filter(p => p.id === id)[0];
+        return of(Object.assign(post, data));
     }
 }
